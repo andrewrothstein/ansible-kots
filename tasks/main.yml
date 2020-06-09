@@ -1,0 +1,58 @@
+---
+- name: resolve platform specific vars
+  include_vars: '{{ item }}'
+  with_first_found:
+    - files:
+        - '{{ ansible_distribution }}-{{ ansible_distribution_release }}.yml'
+        - '{{ ansible_distribution }}.yml'
+        - '{{ ansible_os_family }}.yml'
+      skip: true
+      paths:
+        - '{{ role_path }}/vars'
+- name: check for kots {{ kots_ver }} install
+  become: yes
+  stat:
+    path: '{{ kots_install_dir }}'
+  changed_when: False
+  register: kots_binary
+- when: not kots_binary.stat.exists
+  block:
+    - name: download archive...
+      become: yes
+      become_user: root
+      get_url:
+        url: '{{ kots_url }}'
+        dest: /tmp/{{ kots_archive }}
+        checksum: '{{ kots_checksum }}'
+        mode: 0644
+    - name: mkdir....
+      become: yes
+      become_user: root
+      file:
+        path: '{{ kots_install_dir }}'
+        state: directory
+        mode: 0755
+    - name: unarchive...
+      become: yes
+      become_user: root
+      unarchive:
+        remote_src: yes
+        src: /tmp/{{ kots_archive }}
+        dest: '{{ kots_install_dir }}'
+        creates: '{{ kots_install_dir }}/kots'
+  always:
+    - name: cleanup
+      become: yes
+      become_user: root
+      file:
+        path: /tmp/{{ kots_archive }}
+        state: absent
+- name: link executables
+  become: yes
+  become_user: root
+  with_items:
+    - kots
+  file:
+    src: '{{ kots_install_dir }}/{{ item }}'
+    dest: '{{ kots_parent_install_dir }}/bin/{{ item }}'
+    state: link
