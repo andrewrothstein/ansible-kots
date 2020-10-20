@@ -1,6 +1,5 @@
 #!/usr/bin/env sh
 set -e
-#set -x
 DIR=~/Downloads
 MIRROR=https://github.com/replicatedhq/kots/releases/download
 APP=kots
@@ -37,4 +36,4 @@ dl_ver() {
     dl $ver $lchecksums windows amd64 zip
 }
 
-dl_ver ${1:-1.16.0}
+dl_ver ${1:-1.20.3}

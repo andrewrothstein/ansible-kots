@@ -4,4 +4,5 @@ kots_platform: '{{ kots_os }}_{{ kots_arch }}'
 kots_url: '{{ kots_mirror }}/v{{ kots_ver }}/kots_{{ kots_platform }}.{{ kots_archive_type | default("tar.gz") }}'
 kots_checksum: '{{ kots_checksums[kots_ver][kots_platform] }}'
 kots_archive: kots_{{ kots_platform }}_{{ kots_ver }}.{{ kots_archive_type | default("tar.gz") }}
+kots_tmp_archive: /tmp/{{ kots_archive }}
 kots_install_dir: '{{ kots_parent_install_dir }}/kots-{{ kots_ver }}'

@@ -9,7 +9,7 @@
       skip: true
       paths:
         - '{{ role_path }}/vars'
-- name: check for kots {{ kots_ver }} install
+- name: check for install in {{ kots_install_dir }}...
   become: yes
   stat:
     path: '{{ kots_install_dir }}'
@@ -17,37 +17,37 @@
   register: kots_binary
 - when: not kots_binary.stat.exists
   block:
-    - name: download archive...
+    - name: downloading {{ kots_url }}...
       become: yes
       become_user: root
       get_url:
         url: '{{ kots_url }}'
-        dest: /tmp/{{ kots_archive }}
+        dest: '{{ kots_tmp_archive }}'
         checksum: '{{ kots_checksum }}'
         mode: 0644
-    - name: mkdir....
+    - name: mkdir {{ kots_install_dir }}...
       become: yes
       become_user: root
       file:
         path: '{{ kots_install_dir }}'
         state: directory
         mode: 0755
-    - name: unarchive...
+    - name: unarchive {{ kots_tmp_archive }} to {{ kots_install_dir }}...
       become: yes
       become_user: root
       unarchive:
         remote_src: yes
-        src: /tmp/{{ kots_archive }}
+        src: '{{ kots_tmp_archive }}'
         dest: '{{ kots_install_dir }}'
         creates: '{{ kots_install_dir }}/kots'
   always:
-    - name: cleanup
+    - name: rm {{ kots_tmp_archive }}
       become: yes
       become_user: root
       file:
-        path: /tmp/{{ kots_archive }}
+        path: '{{ kots_tmp_archive }}'
         state: absent
-- name: link executables
+- name: link executables in {{ kots_install_dir }} from {{ kots_parent_install_dir }}/bin...
   become: yes
   become_user: root
   with_items:
