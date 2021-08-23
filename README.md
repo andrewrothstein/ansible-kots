@@ -1,6 +1,6 @@
 andrewrothstein.kots
 =========
-[![Build Status](https://travis-ci.org/andrewrothstein/ansible-kots.svg?branch=master)](https://travis-ci.org/andrewrothstein/ansible-kots)
+![Build Status](https://github.com/andrewrothstein/ansible-kots/actions/workflows/build.yml/badge.svg)
 
 Installs [kots](https://kots.io/).
 
