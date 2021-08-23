@@ -33,7 +33,6 @@ dl_ver() {
 
     dl $ver $lchecksums darwin amd64
     dl $ver $lchecksums linux amd64
-    dl $ver $lchecksums windows amd64 zip
 }
 
-dl_ver ${1:-1.20.3}
+dl_ver ${1:-1.50.1}
