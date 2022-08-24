@@ -20,17 +20,19 @@ galaxy_info:
     - name: EL
       versions:
         - 8
+        - 9
     - name: Fedora
       versions:
-        - 34
+        - 36
+        - 37
     - name: Ubuntu
       versions:
         - bionic
         - focal
+        - jammy
   galaxy_tags:
     - development
   role_name: kots
 
 dependencies:
-  - role: andrewrothstein.unarchive-deps
-    version: v1.2.1
+  - andrewrothstein.unarchive-deps
