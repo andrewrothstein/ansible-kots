@@ -1,6 +1,6 @@
 ---
 # defaults file for kots
-kots_ver: 1.50.1
+kots_ver: 1.81.1
 kots_mirror: https://github.com/replicatedhq/kots/releases/download
 kots_os: linux
 kots_arch: amd64
@@ -28,3 +28,11 @@ kots_checksums:
     darwin_amd64: sha256:482732146e8daf9dae12e1102d7b50b3617ad26340496a970a43471b167dafa7
     # https://github.com/replicatedhq/kots/releases/download/v1.50.1/kots_linux_amd64.tar.gz
     linux_amd64: sha256:9a8fbbd7ad2c13b63fea0b5a7da278a505c009dd08b6dfa6765f393dd272157d
+  # https://github.com/replicatedhq/kots/releases/download/v1.81.1/kots_1.81.1_checksums.txt
+  '1.81.1':
+    # https://github.com/replicatedhq/kots/releases/download/v1.81.1/kots_darwin_all.tar.gz
+    darwin_all: sha256:54f73c87f269acfe0e164613c233bea3404e80a4da89304299776df6635f396b
+    # https://github.com/replicatedhq/kots/releases/download/v1.81.1/kots_linux_amd64.tar.gz
+    linux_amd64: sha256:1c9a53c66e2fe44ebbb3f6a4b3e200c8e4905b7bb5ea0660b96c2662ab6bbf22
+    # https://github.com/replicatedhq/kots/releases/download/v1.81.1/kots_linux_arm64.tar.gz
+    linux_arm64: sha256:ebf731d864ae513a9d998317cdc0cdd162f6cacf90a589407e1327a31c9d95da
