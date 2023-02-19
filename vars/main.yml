@@ -1,5 +1,7 @@
 ---
 # vars file for kots
+kots_os: '{{ ansible_system | lower }}'
+kots_arch: '{{ kots_arch_map[ansible_architecture] }}'
 kots_platform: '{{ kots_os }}_{{ kots_arch }}'
 kots_url: '{{ kots_mirror }}/v{{ kots_ver }}/kots_{{ kots_platform }}.{{ kots_archive_type | default("tar.gz") }}'
 kots_checksum: '{{ kots_checksums[kots_ver][kots_platform] }}'
