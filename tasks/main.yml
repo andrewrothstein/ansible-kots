@@ -1,7 +1,7 @@
 ---
-- include_role:
-    name: andrewrothstein.unarchive-deps
-- name: resolve platform specific vars
+- ansible.builtin.include_role:
+    name: andrewrothstein.unarchivedeps
+- name: Resolve platform specific vars
   include_vars: '{{ item }}'
   with_first_found:
     - files:
@@ -11,50 +11,50 @@
       skip: true
       paths:
         - '{{ role_path }}/vars'
-- name: check for install in {{ kots_install_dir }}...
+- name: Check for install in {{ kots_install_dir }}...
   become: true
-  stat:
+  ansible.builtin.stat:
     path: '{{ kots_install_dir }}'
-  changed_when: False
+  changed_when: false
   register: kots_binary
 - when: not kots_binary.stat.exists
   block:
-    - name: downloading {{ kots_url }}...
+    - name: Downloading {{ kots_url }}...
       become: true
       become_user: root
       get_url:
         url: '{{ kots_url }}'
         dest: '{{ kots_tmp_archive }}'
         checksum: '{{ kots_checksum }}'
-        mode: 0644
-    - name: mkdir {{ kots_install_dir }}...
+        mode: '644'
+    - name: Mkdir {{ kots_install_dir }}...
       become: true
       become_user: root
-      file:
+      ansible.builtin.file:
         path: '{{ kots_install_dir }}'
         state: directory
-        mode: 0755
-    - name: unarchive {{ kots_tmp_archive }} to {{ kots_install_dir }}...
+        mode: '755'
+    - name: Unarchive {{ kots_tmp_archive }} to {{ kots_install_dir }}...
       become: true
       become_user: root
-      unarchive:
+      ansible.builtin.unarchive:
         remote_src: true
         src: '{{ kots_tmp_archive }}'
         dest: '{{ kots_install_dir }}'
         creates: '{{ kots_install_dir }}/kots'
   always:
-    - name: rm {{ kots_tmp_archive }}
+    - name: Rm {{ kots_tmp_archive }}
       become: true
       become_user: root
-      file:
+      ansible.builtin.file:
         path: '{{ kots_tmp_archive }}'
         state: absent
-- name: link executables in {{ kots_install_dir }} from {{ kots_parent_install_dir }}/bin...
+- name: Link executables in {{ kots_install_dir }} from {{ kots_parent_install_dir }}/bin...
   become: true
   become_user: root
   with_items:
     - kots
-  file:
+  ansible.builtin.file:
     src: '{{ kots_install_dir }}/{{ item }}'
     dest: '{{ kots_parent_install_dir }}/bin/{{ item }}'
     state: link
