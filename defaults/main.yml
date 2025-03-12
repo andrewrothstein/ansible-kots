@@ -1,6 +1,6 @@
 ---
 # defaults file for kots
-kots_ver: 1.104.7
+kots_ver: 1.124.5
 kots_mirror: https://github.com/replicatedhq/kots/releases/download
 kots_arch_map:
   aarch64: arm64
@@ -54,3 +54,683 @@ kots_checksums:
     linux_amd64: sha256:1c883741cafb4b14415785b53eff302594f996e8c2d79a26101e7e765d755239
     # https://github.com/replicatedhq/kots/releases/download/v1.104.7/kots_linux_arm64.tar.gz
     linux_arm64: sha256:c3cf1da3680420f5fa861ebf6982326260b3cb2999f15de95980cf41f02636b0
+  # https://github.com/replicatedhq/kots/releases/download/v1.105.0/kots_1.105.0_checksums.txt
+  '1.105.0':
+    # https://github.com/replicatedhq/kots/releases/download/v1.105.0/kots_darwin_all.tar.gz
+    darwin_all: sha256:5a47d873b00beda75525602f7846ddc52f87c2130a9b9f8876c70c08fda7126d
+    # https://github.com/replicatedhq/kots/releases/download/v1.105.0/kots_linux_amd64.tar.gz
+    linux_amd64: sha256:b1cf5883800727da7973ba191111412b56772f7b26684a13b62e432bff631daa
+    # https://github.com/replicatedhq/kots/releases/download/v1.105.0/kots_linux_arm64.tar.gz
+    linux_arm64: sha256:00630b5d44a1ba3a16a4c2113341053df3ceda96d9b713bbfbd7c41ad5c207a8
+  # https://github.com/replicatedhq/kots/releases/download/v1.105.1/kots_1.105.1_checksums.txt
+  '1.105.1':
+    # https://github.com/replicatedhq/kots/releases/download/v1.105.1/kots_darwin_all.tar.gz
+    darwin_all: sha256:4bae22eadfb7d072dd93a48dfb88eba4d5fd865c37d7eef4fb2b24ded6c578af
+    # https://github.com/replicatedhq/kots/releases/download/v1.105.1/kots_linux_amd64.tar.gz
+    linux_amd64: sha256:64124a35ac421f6340a8d47aa572061e3a50b4723acf87c32e3016ab4d785cd8
+    # https://github.com/replicatedhq/kots/releases/download/v1.105.1/kots_linux_arm64.tar.gz
+    linux_arm64: sha256:9b6587cd0aebedb50ed89d56db173e40c175191df54abf861cbb5e39175f2a46
+  # https://github.com/replicatedhq/kots/releases/download/v1.105.2/kots_1.105.2_checksums.txt
+  '1.105.2':
+    # https://github.com/replicatedhq/kots/releases/download/v1.105.2/kots_darwin_all.tar.gz
+    darwin_all: sha256:eb2d0d459dc81ecd008ad5ff03f0447788f606c87565bc79e42fc27aad0d7cb5
+    # https://github.com/replicatedhq/kots/releases/download/v1.105.2/kots_linux_amd64.tar.gz
+    linux_amd64: sha256:4bb26145464da1a1bd2c6f436c8cc13e5e991c58264cb8450469e76c660a8bb6
+    # https://github.com/replicatedhq/kots/releases/download/v1.105.2/kots_linux_arm64.tar.gz
+    linux_arm64: sha256:6b57c19194a2eaa8e7bceb761afa9c9b7a454d694aa89835433e37d296953738
+  # https://github.com/replicatedhq/kots/releases/download/v1.105.3/kots_1.105.3_checksums.txt
+  '1.105.3':
+    # https://github.com/replicatedhq/kots/releases/download/v1.105.3/kots_darwin_all.tar.gz
+    darwin_all: sha256:867a8c1ac019250714f3ccd6d017bdff29442f3bcf7e11739527360724bc5565
+    # https://github.com/replicatedhq/kots/releases/download/v1.105.3/kots_linux_amd64.tar.gz
+    linux_amd64: sha256:b537a79ff8403bbe8f67e1aa70e034095fa0cd23edbbcba62d6fed91cc400cb7
+    # https://github.com/replicatedhq/kots/releases/download/v1.105.3/kots_linux_arm64.tar.gz
+    linux_arm64: sha256:ac37c65069ac36157dbd62457912f2a0171b75887fbbb413494df248978c2b8e
+  # https://github.com/replicatedhq/kots/releases/download/v1.105.4/kots_1.105.4_checksums.txt
+  '1.105.4':
+    # https://github.com/replicatedhq/kots/releases/download/v1.105.4/kots_darwin_all.tar.gz
+    darwin_all: sha256:135185265a96041883a4598e385a34c55a22f28be7c19a0dc360560f8dcfdb82
+    # https://github.com/replicatedhq/kots/releases/download/v1.105.4/kots_linux_amd64.tar.gz
+    linux_amd64: sha256:feb5baec8e5c523c7daadca7bfb27d9b54b9fbc3ab8d4b03f71e56459b90021b
+    # https://github.com/replicatedhq/kots/releases/download/v1.105.4/kots_linux_arm64.tar.gz
+    linux_arm64: sha256:cd9fc2fff1c933070b7bddea9b9602c0a342f5e5b19e7e7d1ab60985808ef84f
+  # https://github.com/replicatedhq/kots/releases/download/v1.105.5/kots_1.105.5_checksums.txt
+  '1.105.5':
+    # https://github.com/replicatedhq/kots/releases/download/v1.105.5/kots_darwin_all.tar.gz
+    darwin_all: sha256:6d7f61a48c27618ccaca6608d544aed4e8cfe912bfc0625dddd08ebc1433eaeb
+    # https://github.com/replicatedhq/kots/releases/download/v1.105.5/kots_linux_amd64.tar.gz
+    linux_amd64: sha256:ebca2a68fbeaa686811b8722e44499719856f4cea400a2d0977072b95128ddae
+    # https://github.com/replicatedhq/kots/releases/download/v1.105.5/kots_linux_arm64.tar.gz
+    linux_arm64: sha256:eda685805e73036e6bb8217075baf7901ed9342c5f4756097863dec59e51f97b
+  # https://github.com/replicatedhq/kots/releases/download/v1.106.0/kots_1.106.0_checksums.txt
+  '1.106.0':
+    # https://github.com/replicatedhq/kots/releases/download/v1.106.0/kots_darwin_all.tar.gz
+    darwin_all: sha256:665599f78d551f1dd8a45b8306396cbca21b9c5cf3987725c57d2dbca97b6605
+    # https://github.com/replicatedhq/kots/releases/download/v1.106.0/kots_linux_amd64.tar.gz
+    linux_amd64: sha256:9c9f24935d658ac209fa710adac1aec7d59a730f7fd89db7e329d4d7621faecc
+    # https://github.com/replicatedhq/kots/releases/download/v1.106.0/kots_linux_arm64.tar.gz
+    linux_arm64: sha256:677b335d964c4a1c0dae3394ff72ab993b51f51ff881af7d22a4e5e3c5f69cc8
+  # https://github.com/replicatedhq/kots/releases/download/v1.107.0/kots_1.107.0_checksums.txt
+  '1.107.0':
+    # https://github.com/replicatedhq/kots/releases/download/v1.107.0/kots_darwin_all.tar.gz
+    darwin_all: sha256:f0157b55c8b3f791764b34c42125037587c3af3f5d509c4525268bf3189697bb
+    # https://github.com/replicatedhq/kots/releases/download/v1.107.0/kots_linux_amd64.tar.gz
+    linux_amd64: sha256:d62ac2f8321b07399f185eb5cc3ea86d231026cefa5bcce517bd05310d17fc3e
+    # https://github.com/replicatedhq/kots/releases/download/v1.107.0/kots_linux_arm64.tar.gz
+    linux_arm64: sha256:c79731542e1d9646cc75d382c18845564a2fcc1c9842e8cdca6bb75dd9b5085b
+  # https://github.com/replicatedhq/kots/releases/download/v1.107.1/kots_1.107.1_checksums.txt
+  '1.107.1':
+    # https://github.com/replicatedhq/kots/releases/download/v1.107.1/kots_darwin_all.tar.gz
+    darwin_all: sha256:606cffb5cb1c1cd92356fc6b011782a2e0b15f6261c753fa6e4f2c1d9b2d1204
+    # https://github.com/replicatedhq/kots/releases/download/v1.107.1/kots_linux_amd64.tar.gz
+    linux_amd64: sha256:edd5526ea7bd2cb9b0b9e9af5184016b53e900325a6429b846bfe600d75d3429
+    # https://github.com/replicatedhq/kots/releases/download/v1.107.1/kots_linux_arm64.tar.gz
+    linux_arm64: sha256:ae87b756e67562c2cc432580ba6639a62fe1d7699b5636dffd27c568ff941cd0
+  # https://github.com/replicatedhq/kots/releases/download/v1.107.2/kots_1.107.2_checksums.txt
+  '1.107.2':
+    # https://github.com/replicatedhq/kots/releases/download/v1.107.2/kots_darwin_all.tar.gz
+    darwin_all: sha256:d71a33125e30d05e166f90d1eb6ec1ffed51cf1161462668b4b9723f82324534
+    # https://github.com/replicatedhq/kots/releases/download/v1.107.2/kots_linux_amd64.tar.gz
+    linux_amd64: sha256:5abad442282b677aae5817a57c1b770cb4c74be1e48e670756263aba2f1dd00a
+    # https://github.com/replicatedhq/kots/releases/download/v1.107.2/kots_linux_arm64.tar.gz
+    linux_arm64: sha256:8d71c7e22bc94c3045856280d38d68d099534c5cf20d6161cec47406714b8efb
+  # https://github.com/replicatedhq/kots/releases/download/v1.107.3/kots_1.107.3_checksums.txt
+  '1.107.3':
+    # https://github.com/replicatedhq/kots/releases/download/v1.107.3/kots_darwin_all.tar.gz
+    darwin_all: sha256:96ea777668ce52ea7dc59e1632b11ce2aa51cf092c9f85525307cf5087ecfa7b
+    # https://github.com/replicatedhq/kots/releases/download/v1.107.3/kots_linux_amd64.tar.gz
+    linux_amd64: sha256:a455e5cc3f8f1ef37e0ae039c09f97a6c52de898afd30df9f38ce94083cb5869
+    # https://github.com/replicatedhq/kots/releases/download/v1.107.3/kots_linux_arm64.tar.gz
+    linux_arm64: sha256:5fd7506f857a6a4c87a712ca28e18ccb51ecf4441bb632fb5e76e010ba53a58b
+  # https://github.com/replicatedhq/kots/releases/download/v1.107.4/kots_1.107.4_checksums.txt
+  '1.107.4':
+    # https://github.com/replicatedhq/kots/releases/download/v1.107.4/kots_darwin_all.tar.gz
+    darwin_all: sha256:4c4942e2a9a6a6f9068c51a12ffe53f644a8e244886313af3cebf0a80ebea5a7
+    # https://github.com/replicatedhq/kots/releases/download/v1.107.4/kots_linux_amd64.tar.gz
+    linux_amd64: sha256:aa2b891bf5c43996cda260721c6ddf6712fe0265b77509f613dd219346ed8ecb
+    # https://github.com/replicatedhq/kots/releases/download/v1.107.4/kots_linux_arm64.tar.gz
+    linux_arm64: sha256:ac5cc0c85b893a93391e1d8c76484b7444fc49f35fc61f8c2d1102520f30791a
+  # https://github.com/replicatedhq/kots/releases/download/v1.107.5/kots_1.107.5_checksums.txt
+  '1.107.5':
+    # https://github.com/replicatedhq/kots/releases/download/v1.107.5/kots_darwin_all.tar.gz
+    darwin_all: sha256:559aa22205d75c5ad50e88fbb5f669e861d287ec986bbe7299c5688ae7a7ed3b
+    # https://github.com/replicatedhq/kots/releases/download/v1.107.5/kots_linux_amd64.tar.gz
+    linux_amd64: sha256:d2bdb750258ab228f30177f4e39be87c13ad09fd1ce25a6cf82e5c686ab4cff6
+    # https://github.com/replicatedhq/kots/releases/download/v1.107.5/kots_linux_arm64.tar.gz
+    linux_arm64: sha256:b9b6a0acb45b700d038ee10c014b505fe485953df70b6355f9a26dc04784efbe
+  # https://github.com/replicatedhq/kots/releases/download/v1.107.6/kots_1.107.6_checksums.txt
+  '1.107.6':
+    # https://github.com/replicatedhq/kots/releases/download/v1.107.6/kots_darwin_all.tar.gz
+    darwin_all: sha256:98f9fd0e75771e217bc02bf3898064a0f51f9524b7c847aaf371775f6214e6f5
+    # https://github.com/replicatedhq/kots/releases/download/v1.107.6/kots_linux_amd64.tar.gz
+    linux_amd64: sha256:80daf829d89d8798c27c938385d084074f316b6985b6bf98a41957463d51ef06
+    # https://github.com/replicatedhq/kots/releases/download/v1.107.6/kots_linux_arm64.tar.gz
+    linux_arm64: sha256:f14397d51d9f4e1f2875e8981d9ca7bd30fdbd043c93b0d85cbe20c12d846e8f
+  # https://github.com/replicatedhq/kots/releases/download/v1.107.7/kots_1.107.7_checksums.txt
+  '1.107.7':
+    # https://github.com/replicatedhq/kots/releases/download/v1.107.7/kots_darwin_all.tar.gz
+    darwin_all: sha256:09ababe759ca76a628071d1f561b0f4ef583077fa5f5b108927fd7a62e7a71d5
+    # https://github.com/replicatedhq/kots/releases/download/v1.107.7/kots_linux_amd64.tar.gz
+    linux_amd64: sha256:a641b0e1783174336e4f60c1e2b277c1241a2d803d989d69ed658a7477806846
+    # https://github.com/replicatedhq/kots/releases/download/v1.107.7/kots_linux_arm64.tar.gz
+    linux_arm64: sha256:8ddda7e30a98f5ad48fd6c1209cdf292a57f5c89f1282f7989ad3edf4e7e57ff
+  # https://github.com/replicatedhq/kots/releases/download/v1.107.8/kots_1.107.8_checksums.txt
+  '1.107.8':
+    # https://github.com/replicatedhq/kots/releases/download/v1.107.8/kots_darwin_all.tar.gz
+    darwin_all: sha256:581b903f093c09af13d8bc9f91dd6a16c5795524e68d79e5232813485c6e8616
+    # https://github.com/replicatedhq/kots/releases/download/v1.107.8/kots_linux_amd64.tar.gz
+    linux_amd64: sha256:fada54ade765b69ede7393dd18fbbf1b23d606759eb9662be1a2ba6b1bfc021a
+    # https://github.com/replicatedhq/kots/releases/download/v1.107.8/kots_linux_arm64.tar.gz
+    linux_arm64: sha256:91da2443987853ffd5ab217b2af48c8329ddf1a1d5569736b86b52e42cc664e7
+  # https://github.com/replicatedhq/kots/releases/download/v1.108.0/kots_1.108.0_checksums.txt
+  '1.108.0':
+    # https://github.com/replicatedhq/kots/releases/download/v1.108.0/kots_darwin_all.tar.gz
+    darwin_all: sha256:f4fd62c62fff4fae9e6943e3a82abde418d660dfec685d8530b915eb842c8d6d
+    # https://github.com/replicatedhq/kots/releases/download/v1.108.0/kots_linux_amd64.tar.gz
+    linux_amd64: sha256:5c4fcca8855dca0ee6d5ddfbaff834958ccd267b8354de6a2039e699f21a857b
+    # https://github.com/replicatedhq/kots/releases/download/v1.108.0/kots_linux_arm64.tar.gz
+    linux_arm64: sha256:d1245e601dd91e297f2401457400e01dc6c6d7593c4638eb4ce2482d235380a1
+  # https://github.com/replicatedhq/kots/releases/download/v1.108.1/kots_1.108.1_checksums.txt
+  '1.108.1':
+    # https://github.com/replicatedhq/kots/releases/download/v1.108.1/kots_darwin_all.tar.gz
+    darwin_all: sha256:82cfcecc3213d2f1dc9fda796da48062b3b41a6a3e66446892fe2f8950622680
+    # https://github.com/replicatedhq/kots/releases/download/v1.108.1/kots_linux_amd64.tar.gz
+    linux_amd64: sha256:5d8551af4f0be12234aaacadda0a881b113c2f7082b17dfb94ceb599e2f34ce2
+    # https://github.com/replicatedhq/kots/releases/download/v1.108.1/kots_linux_arm64.tar.gz
+    linux_arm64: sha256:ce522a3e176488f2977285c36478558e8fce8ad841ef5a68a60bc40d7899a688
+  # https://github.com/replicatedhq/kots/releases/download/v1.108.2/kots_1.108.2_checksums.txt
+  '1.108.2':
+    # https://github.com/replicatedhq/kots/releases/download/v1.108.2/kots_darwin_all.tar.gz
+    darwin_all: sha256:5b6d94f67dc35f1655c89e6c0f2f41a075635a075107dc3c4d56165385e2ed04
+    # https://github.com/replicatedhq/kots/releases/download/v1.108.2/kots_linux_amd64.tar.gz
+    linux_amd64: sha256:f84fa98e359119786395d031339306e1437b800b977ea26c80baa2a2a4e442a4
+    # https://github.com/replicatedhq/kots/releases/download/v1.108.2/kots_linux_arm64.tar.gz
+    linux_arm64: sha256:173770135e2b467d56d3a0063b779d3bcd65d08a98255f70855d6ff146f9b92a
+  # https://github.com/replicatedhq/kots/releases/download/v1.108.3/kots_1.108.3_checksums.txt
+  '1.108.3':
+    # https://github.com/replicatedhq/kots/releases/download/v1.108.3/kots_darwin_all.tar.gz
+    darwin_all: sha256:56a38a1246c20abc3a9f05e0b962adf71c56a7e02195ea4f2cee039ff5e9a81d
+    # https://github.com/replicatedhq/kots/releases/download/v1.108.3/kots_linux_amd64.tar.gz
+    linux_amd64: sha256:5648d50ab5842e5f9baf64667242fa5e23e804c15507adaa4c12049437ffad4f
+    # https://github.com/replicatedhq/kots/releases/download/v1.108.3/kots_linux_arm64.tar.gz
+    linux_arm64: sha256:4b1fdf71718130eb8b152373e0257000b0b515d081939a57b476e897ee2c1069
+  # https://github.com/replicatedhq/kots/releases/download/v1.108.4/kots_1.108.4_checksums.txt
+  '1.108.4':
+    # https://github.com/replicatedhq/kots/releases/download/v1.108.4/kots_darwin_all.tar.gz
+    darwin_all: sha256:6b6f8997d53cafa458624dbb18c39043bf15b51074facfd75cbe0c21e96d6d23
+    # https://github.com/replicatedhq/kots/releases/download/v1.108.4/kots_linux_amd64.tar.gz
+    linux_amd64: sha256:a61f5c5a83cc631297bca517be2ba579b468d1635cc86e09d6cf94d802a9e84d
+    # https://github.com/replicatedhq/kots/releases/download/v1.108.4/kots_linux_arm64.tar.gz
+    linux_arm64: sha256:75d38c3f6b731cb04c83b5407a54376084adf1a19339153d2f4db5350ab954ea
+  # https://github.com/replicatedhq/kots/releases/download/v1.108.5/kots_1.108.5_checksums.txt
+  '1.108.5':
+    # https://github.com/replicatedhq/kots/releases/download/v1.108.5/kots_darwin_all.tar.gz
+    darwin_all: sha256:a9f7556724014f7bef776c95784d612ae2faa5a2c33a7b9144529ccabc8339e9
+    # https://github.com/replicatedhq/kots/releases/download/v1.108.5/kots_linux_amd64.tar.gz
+    linux_amd64: sha256:d7262a1bb30aadd14d128ad91a4173d39ba54b4ee74565941fa6b84bf1a639b5
+    # https://github.com/replicatedhq/kots/releases/download/v1.108.5/kots_linux_arm64.tar.gz
+    linux_arm64: sha256:4724be5ba33b20edcf28598e4f7a96d5ebaa0bdcde58e30881c1f70d97606765
+  # https://github.com/replicatedhq/kots/releases/download/v1.108.6/kots_1.108.6_checksums.txt
+  '1.108.6':
+    # https://github.com/replicatedhq/kots/releases/download/v1.108.6/kots_darwin_all.tar.gz
+    darwin_all: sha256:68d870a799d1f9ed65dfe4d507b7f4f95f8aea580d172e499b15fbf5561bd9ac
+    # https://github.com/replicatedhq/kots/releases/download/v1.108.6/kots_linux_amd64.tar.gz
+    linux_amd64: sha256:be1e0d20c1948c2002d2beab284dcac25bc143f69fea3f83807abf5575eddc14
+    # https://github.com/replicatedhq/kots/releases/download/v1.108.6/kots_linux_arm64.tar.gz
+    linux_arm64: sha256:4638eaf7468c430b6a1847831da917157057c6a41179645f04db9199d0b64b9e
+  # https://github.com/replicatedhq/kots/releases/download/v1.108.7/kots_1.108.7_checksums.txt
+  '1.108.7':
+    # https://github.com/replicatedhq/kots/releases/download/v1.108.7/kots_darwin_all.tar.gz
+    darwin_all: sha256:2c5da32836ddb037e20af3ed32fadc2ec600789fe9c27f0af180049a1b84d574
+    # https://github.com/replicatedhq/kots/releases/download/v1.108.7/kots_linux_amd64.tar.gz
+    linux_amd64: sha256:e7f3795fb0da47e8d80a8c2b8349e6a80f313f031d866d1b3c94e1384fb0bdda
+    # https://github.com/replicatedhq/kots/releases/download/v1.108.7/kots_linux_arm64.tar.gz
+    linux_arm64: sha256:b04d5480c5175df730034fa60926bbb0386d00f897390401578cd9bdbc7842ae
+  # https://github.com/replicatedhq/kots/releases/download/v1.108.8/kots_1.108.8_checksums.txt
+  '1.108.8':
+    # https://github.com/replicatedhq/kots/releases/download/v1.108.8/kots_darwin_all.tar.gz
+    darwin_all: sha256:a2410c71ab2dd51e71c763cfa33be4962600601a7c3627f943d1bd05acb0b3df
+    # https://github.com/replicatedhq/kots/releases/download/v1.108.8/kots_linux_amd64.tar.gz
+    linux_amd64: sha256:2ddf3f204e9466c6a194094f63bcc26d677fe25c7813f62e77912c0be03b77dc
+    # https://github.com/replicatedhq/kots/releases/download/v1.108.8/kots_linux_arm64.tar.gz
+    linux_arm64: sha256:6c07944c6f817303da9ba53817c27f6eb27413d49b3533cefcb85fcf7d867ca0
+  # https://github.com/replicatedhq/kots/releases/download/v1.108.9/kots_1.108.9_checksums.txt
+  '1.108.9':
+    # https://github.com/replicatedhq/kots/releases/download/v1.108.9/kots_darwin_all.tar.gz
+    darwin_all: sha256:8eef1fb8934808df92c0cc81867fa7f19c2349e8ff8ab378f208bb6c5aae9ba6
+    # https://github.com/replicatedhq/kots/releases/download/v1.108.9/kots_linux_amd64.tar.gz
+    linux_amd64: sha256:2bb613131c22ed251571aa228d31d20636d284ad47bb8c463e1794bf30bea4d3
+    # https://github.com/replicatedhq/kots/releases/download/v1.108.9/kots_linux_arm64.tar.gz
+    linux_arm64: sha256:fae2978bb19dd68259b0a3d5cf56088df3fedc1a84953559740d58bead2b4714
+  # https://github.com/replicatedhq/kots/releases/download/v1.108.10/kots_1.108.10_checksums.txt
+  '1.108.10':
+    # https://github.com/replicatedhq/kots/releases/download/v1.108.10/kots_darwin_all.tar.gz
+    darwin_all: sha256:147633be28362a5c3fdad586b4e31b42c1b3a5c412205dbd9b188374700bf741
+    # https://github.com/replicatedhq/kots/releases/download/v1.108.10/kots_linux_amd64.tar.gz
+    linux_amd64: sha256:8a642b5d5b46bdffb7f106cf13b1203edff8a90b5b26bdd9046e3e337638807c
+    # https://github.com/replicatedhq/kots/releases/download/v1.108.10/kots_linux_arm64.tar.gz
+    linux_arm64: sha256:d4dbf8a8902ff413a142d17817567aee59e807993c849dd7852276acf299a146
+  # https://github.com/replicatedhq/kots/releases/download/v1.108.11/kots_1.108.11_checksums.txt
+  '1.108.11':
+    # https://github.com/replicatedhq/kots/releases/download/v1.108.11/kots_darwin_all.tar.gz
+    darwin_all: sha256:b5e967a3d5b4f793cdf33a0a8823f7c63e3077e01a32c6759fa012dc4bb5d540
+    # https://github.com/replicatedhq/kots/releases/download/v1.108.11/kots_linux_amd64.tar.gz
+    linux_amd64: sha256:4ecd8631357a3baad51d422ba2055095e0a1c4e7314780334ea66afc8d8b19b4
+    # https://github.com/replicatedhq/kots/releases/download/v1.108.11/kots_linux_arm64.tar.gz
+    linux_arm64: sha256:6f1a81264197cce867e9ccc8248d227b50556250af1e3550938fd7e24dba52d4
+  # https://github.com/replicatedhq/kots/releases/download/v1.108.12/kots_1.108.12_checksums.txt
+  '1.108.12':
+    # https://github.com/replicatedhq/kots/releases/download/v1.108.12/kots_darwin_all.tar.gz
+    darwin_all: sha256:c9af84fbbb117a5f33bed2b1fdafd07cc3836141a677add9c1569bb1c3a8fb0b
+    # https://github.com/replicatedhq/kots/releases/download/v1.108.12/kots_linux_amd64.tar.gz
+    linux_amd64: sha256:ef861e5f60da31ee48121c6974aa60cf846653cf34f4155c3d54dcd55cb0f5ad
+    # https://github.com/replicatedhq/kots/releases/download/v1.108.12/kots_linux_arm64.tar.gz
+    linux_arm64: sha256:d9c5df21196aa85a4b2c7ec4dfc3628da73f61df7f6d0a0475f93705ae62cecb
+  # https://github.com/replicatedhq/kots/releases/download/v1.108.13/kots_1.108.13_checksums.txt
+  '1.108.13':
+    # https://github.com/replicatedhq/kots/releases/download/v1.108.13/kots_darwin_all.tar.gz
+    darwin_all: sha256:b623991b8d1185201b611de2d0a59a5bc95dab4a6cd4fcae7bda75af535e1b60
+    # https://github.com/replicatedhq/kots/releases/download/v1.108.13/kots_linux_amd64.tar.gz
+    linux_amd64: sha256:5e3ab6b0dac65ae752648033331489b11361f57f15dccff8f9fc4da584dc2ab8
+    # https://github.com/replicatedhq/kots/releases/download/v1.108.13/kots_linux_arm64.tar.gz
+    linux_arm64: sha256:37aec9ae6aa02aeecc0d60708adc434cb8520d4e7fd0acce0a88f9f1198af6f3
+  # https://github.com/replicatedhq/kots/releases/download/v1.109.0/kots_1.109.0_checksums.txt
+  '1.109.0':
+    # https://github.com/replicatedhq/kots/releases/download/v1.109.0/kots_darwin_all.tar.gz
+    darwin_all: sha256:3fe94b0a55c6aa4caa4a3f29cb04914d7e235233935a447e3e6b782389e9bae1
+    # https://github.com/replicatedhq/kots/releases/download/v1.109.0/kots_linux_amd64.tar.gz
+    linux_amd64: sha256:b6e8acdb940a9256bff42dd75207a617d465db6841d7ee591c6a755f3cc9b831
+    # https://github.com/replicatedhq/kots/releases/download/v1.109.0/kots_linux_arm64.tar.gz
+    linux_arm64: sha256:03c848db66605690f7e789c0dc7925dd356aaeafdd36d81ce2e1fbfda3faab6a
+  # https://github.com/replicatedhq/kots/releases/download/v1.109.1/kots_1.109.1_checksums.txt
+  '1.109.1':
+    # https://github.com/replicatedhq/kots/releases/download/v1.109.1/kots_darwin_all.tar.gz
+    darwin_all: sha256:9bbc9b4059dd8e1b9667235cf0a7783423751d1e5bbdfbb6bff0604f994f7d7d
+    # https://github.com/replicatedhq/kots/releases/download/v1.109.1/kots_linux_amd64.tar.gz
+    linux_amd64: sha256:076f33444d640282a7534aa9d8fbed152f73315e350e90e0fb1e80be2e24cda6
+    # https://github.com/replicatedhq/kots/releases/download/v1.109.1/kots_linux_arm64.tar.gz
+    linux_arm64: sha256:29900aaee67adedf2a4438c009fb28bf7afd3d3349cd3fc3188c1ddfd1096e7e
+  # https://github.com/replicatedhq/kots/releases/download/v1.109.2/kots_1.109.2_checksums.txt
+  '1.109.2':
+    # https://github.com/replicatedhq/kots/releases/download/v1.109.2/kots_darwin_all.tar.gz
+    darwin_all: sha256:0037d2efe3e58701fc29e34792f5798f5e8a07859b6b22ba6a50b92475ee111f
+    # https://github.com/replicatedhq/kots/releases/download/v1.109.2/kots_linux_amd64.tar.gz
+    linux_amd64: sha256:a30fa514058b0a5ae6b6c0c08d020474279a7cc6e3dd23c1b771344df723366f
+    # https://github.com/replicatedhq/kots/releases/download/v1.109.2/kots_linux_arm64.tar.gz
+    linux_arm64: sha256:62305e45706d98cb6fed5668e8a3139f446c7307d003dacbf7b62c787f6d901d
+  # https://github.com/replicatedhq/kots/releases/download/v1.109.3/kots_1.109.3_checksums.txt
+  '1.109.3':
+    # https://github.com/replicatedhq/kots/releases/download/v1.109.3/kots_darwin_all.tar.gz
+    darwin_all: sha256:26761aa26bb929509dd9edfe9800131e5ae84bf45612734af8b131034ecde032
+    # https://github.com/replicatedhq/kots/releases/download/v1.109.3/kots_linux_amd64.tar.gz
+    linux_amd64: sha256:c1c193fe3d40d849b4df0016cc201d6089ab39d53cd5ab12721a5d9840485e7c
+    # https://github.com/replicatedhq/kots/releases/download/v1.109.3/kots_linux_arm64.tar.gz
+    linux_arm64: sha256:c32ff87d546202b5cf721fb558365e5450ba42eab6a7cc81f477daec5b3e7534
+  # https://github.com/replicatedhq/kots/releases/download/v1.109.4/kots_1.109.4_checksums.txt
+  '1.109.4':
+    # https://github.com/replicatedhq/kots/releases/download/v1.109.4/kots_darwin_all.tar.gz
+    darwin_all: sha256:c55202b1b2bb27d8086993567d8733388859c8aa55f122e576fa98a9fdf2ed15
+    # https://github.com/replicatedhq/kots/releases/download/v1.109.4/kots_linux_amd64.tar.gz
+    linux_amd64: sha256:f3f1c626b72ac6c71842b164fc9915a16eef2a7351dca74513734bf3b4723d96
+    # https://github.com/replicatedhq/kots/releases/download/v1.109.4/kots_linux_arm64.tar.gz
+    linux_arm64: sha256:d30ac70dea39b8b98629f16cea005594877fc8ddfb7a07d1149224f72e501a34
+  # https://github.com/replicatedhq/kots/releases/download/v1.109.5/kots_1.109.5_checksums.txt
+  '1.109.5':
+    # https://github.com/replicatedhq/kots/releases/download/v1.109.5/kots_darwin_all.tar.gz
+    darwin_all: sha256:7bec35a27238355ab8ff3f0c5c31951351f6081d603a44feb4376f9a7bafcc88
+    # https://github.com/replicatedhq/kots/releases/download/v1.109.5/kots_linux_amd64.tar.gz
+    linux_amd64: sha256:26a13b7c9efeedc3e1b9956825634e199ca651c7e67c72c4c1aa73290f4174ca
+    # https://github.com/replicatedhq/kots/releases/download/v1.109.5/kots_linux_arm64.tar.gz
+    linux_arm64: sha256:e0dbc926622a423f0d76279236aeb3ab3d8e75ee1e13e81585f4ee7a846b671b
+  # https://github.com/replicatedhq/kots/releases/download/v1.109.6/kots_1.109.6_checksums.txt
+  '1.109.6':
+    # https://github.com/replicatedhq/kots/releases/download/v1.109.6/kots_darwin_all.tar.gz
+    darwin_all: sha256:bef78fe1482600161e81b3f1f9cc6556642a1a0db9b9b45ba5bbcc872bfe3b8c
+    # https://github.com/replicatedhq/kots/releases/download/v1.109.6/kots_linux_amd64.tar.gz
+    linux_amd64: sha256:5e40c9746596984645dc5117e3b3df8940e5361455b1f7c394491a0e2b010c93
+    # https://github.com/replicatedhq/kots/releases/download/v1.109.6/kots_linux_arm64.tar.gz
+    linux_arm64: sha256:671a374c2f4762bd5d865ae2c45afe5e94547abfcfe4b21c6c9c590d314c8309
+  # https://github.com/replicatedhq/kots/releases/download/v1.109.7/kots_1.109.7_checksums.txt
+  '1.109.7':
+    # https://github.com/replicatedhq/kots/releases/download/v1.109.7/kots_darwin_all.tar.gz
+    darwin_all: sha256:002a7672c003df999186473003e005e64f24d8a1880b7bd7c047296ef9418d00
+    # https://github.com/replicatedhq/kots/releases/download/v1.109.7/kots_linux_amd64.tar.gz
+    linux_amd64: sha256:df586c4f3ce7aeee1ab7d6c8177862bbba2b09bb1ae24250fef25e232ac4607b
+    # https://github.com/replicatedhq/kots/releases/download/v1.109.7/kots_linux_arm64.tar.gz
+    linux_arm64: sha256:daf67a7f30b381d68db36cffbaa002e34247cff145f9a4961e9f9383b270192d
+  # https://github.com/replicatedhq/kots/releases/download/v1.109.8/kots_1.109.8_checksums.txt
+  '1.109.8':
+    # https://github.com/replicatedhq/kots/releases/download/v1.109.8/kots_darwin_all.tar.gz
+    darwin_all: sha256:8c42ca236809f2afa29ca32d5f41b2b60070688a139ccbd05af533fbc2570429
+    # https://github.com/replicatedhq/kots/releases/download/v1.109.8/kots_linux_amd64.tar.gz
+    linux_amd64: sha256:9ad57964233cbdbd8e2d8f617491d792cd2505142aa29bdc62d5929a287b5062
+    # https://github.com/replicatedhq/kots/releases/download/v1.109.8/kots_linux_arm64.tar.gz
+    linux_arm64: sha256:34a3a65fa75bb1b5ac6e8a388b9d7f557c8c07a3d9609f5ffaa66f165ceec4ff
+  # https://github.com/replicatedhq/kots/releases/download/v1.109.9/kots_1.109.9_checksums.txt
+  '1.109.9':
+    # https://github.com/replicatedhq/kots/releases/download/v1.109.9/kots_darwin_all.tar.gz
+    darwin_all: sha256:52534453bef9e1ccc8c1b2dc1e9ddb070e9b9e7621509a0044f3bbe7478ca853
+    # https://github.com/replicatedhq/kots/releases/download/v1.109.9/kots_linux_amd64.tar.gz
+    linux_amd64: sha256:657be6d7b83d89287ada3d0873bab54f89a695091048ed603c5a59bb54323cbc
+    # https://github.com/replicatedhq/kots/releases/download/v1.109.9/kots_linux_arm64.tar.gz
+    linux_arm64: sha256:0a45701447d67290d4fe8bb26c856ae98f971a9b9ef9d2a9a36cea479b09330b
+  # https://github.com/replicatedhq/kots/releases/download/v1.109.10/kots_1.109.10_checksums.txt
+  '1.109.10':
+    # https://github.com/replicatedhq/kots/releases/download/v1.109.10/kots_darwin_all.tar.gz
+    darwin_all: sha256:56dacff10b4bdbac246717ef284d38152bc46c417142b0ad57e73019776346dd
+    # https://github.com/replicatedhq/kots/releases/download/v1.109.10/kots_linux_amd64.tar.gz
+    linux_amd64: sha256:1da4d5c52982bfc3fb531a9dbf22411b7801b750161931ecf692183bc83891f8
+    # https://github.com/replicatedhq/kots/releases/download/v1.109.10/kots_linux_arm64.tar.gz
+    linux_arm64: sha256:eeeef3faf5e06e591ff2ff281ead6094437e0d9b96ef96cbdb49349d10ea744f
+  # https://github.com/replicatedhq/kots/releases/download/v1.109.11/kots_1.109.11_checksums.txt
+  '1.109.11':
+    # https://github.com/replicatedhq/kots/releases/download/v1.109.11/kots_darwin_all.tar.gz
+    darwin_all: sha256:b31b1d82cfbd9c7f0857f7fd22ab8b2d9dca8f31e577dbb87659678f736e33f5
+    # https://github.com/replicatedhq/kots/releases/download/v1.109.11/kots_linux_amd64.tar.gz
+    linux_amd64: sha256:da8e7e1edaafbac42132b01fff80b03004a35702e6231564a66ad4498d7bfff6
+    # https://github.com/replicatedhq/kots/releases/download/v1.109.11/kots_linux_arm64.tar.gz
+    linux_arm64: sha256:b7528eadf868002b14e81b126f4e31bd92d2239a71ae31b97a39e1b61a4b7f54
+  # https://github.com/replicatedhq/kots/releases/download/v1.109.12/kots_1.109.12_checksums.txt
+  '1.109.12':
+    # https://github.com/replicatedhq/kots/releases/download/v1.109.12/kots_darwin_all.tar.gz
+    darwin_all: sha256:8baf56b1ddafd439b5a84a4614b83c8cb497d4f388f3eb34c7c7e2687835acbb
+    # https://github.com/replicatedhq/kots/releases/download/v1.109.12/kots_linux_amd64.tar.gz
+    linux_amd64: sha256:f123dda038b81578fc659712c1fc604c723c95870a3f37ba878319dc194eee12
+    # https://github.com/replicatedhq/kots/releases/download/v1.109.12/kots_linux_arm64.tar.gz
+    linux_arm64: sha256:71734502f0afa9cbf07c124c3f2026523d53072f443237745cbc78e06305c5e9
+  # https://github.com/replicatedhq/kots/releases/download/v1.109.13/kots_1.109.13_checksums.txt
+  '1.109.13':
+    # https://github.com/replicatedhq/kots/releases/download/v1.109.13/kots_darwin_all.tar.gz
+    darwin_all: sha256:d0e5db2941ca176a74d1f47969ef5bf520dc0dd2861ffec6b32e613439047360
+    # https://github.com/replicatedhq/kots/releases/download/v1.109.13/kots_linux_amd64.tar.gz
+    linux_amd64: sha256:bde2c7e214d57fae519eaab06ebc6e2e4eb7e52a5f846ffa55201a8c58067b6f
+    # https://github.com/replicatedhq/kots/releases/download/v1.109.13/kots_linux_arm64.tar.gz
+    linux_arm64: sha256:06c5655c2ae736c42f7cc62609ba5da9ede0f1c3e0bbc8deba97a15d6364a51a
+  # https://github.com/replicatedhq/kots/releases/download/v1.109.14/kots_1.109.14_checksums.txt
+  '1.109.14':
+    # https://github.com/replicatedhq/kots/releases/download/v1.109.14/kots_darwin_all.tar.gz
+    darwin_all: sha256:113e9ffe9a30fc3e32d0cf6868c5a5686104e898bc168bd9ec132ba6f64e000b
+    # https://github.com/replicatedhq/kots/releases/download/v1.109.14/kots_linux_amd64.tar.gz
+    linux_amd64: sha256:a8eb947e62fd06e7411f6228985304a1bc614d503aa7325a4ebb0024c84f2a74
+    # https://github.com/replicatedhq/kots/releases/download/v1.109.14/kots_linux_arm64.tar.gz
+    linux_arm64: sha256:052e3a53080071536c5478f6631f0a83843add48fe5a12c72485132977f0b225
+  # https://github.com/replicatedhq/kots/releases/download/v1.110.0/kots_1.110.0_checksums.txt
+  '1.110.0':
+    # https://github.com/replicatedhq/kots/releases/download/v1.110.0/kots_darwin_all.tar.gz
+    darwin_all: sha256:a79581fe359d5389d79c6d231904652a4dee55d734a627dfd285ae0fd4d95c7d
+    # https://github.com/replicatedhq/kots/releases/download/v1.110.0/kots_linux_amd64.tar.gz
+    linux_amd64: sha256:6dd9e2831f0a6bdd9a56a0f54ab624131b7e812fa8f930a2e7b1475a51b200f5
+    # https://github.com/replicatedhq/kots/releases/download/v1.110.0/kots_linux_arm64.tar.gz
+    linux_arm64: sha256:7ab8cc53a08028c4e120e48a5f19931f8f1b5fb9f5dae10a21ddf4c42fd68102
+  # https://github.com/replicatedhq/kots/releases/download/v1.111.0/kots_1.111.0_checksums.txt
+  '1.111.0':
+    # https://github.com/replicatedhq/kots/releases/download/v1.111.0/kots_darwin_all.tar.gz
+    darwin_all: sha256:64fe3fb71853fe17b73a33fcc94b97d1c155f35a86a78cab92662c0c5ff45f4e
+    # https://github.com/replicatedhq/kots/releases/download/v1.111.0/kots_linux_amd64.tar.gz
+    linux_amd64: sha256:c098953699ac1208e810c625bfca5fe401231278eeb8654347bcccf4c82ad871
+    # https://github.com/replicatedhq/kots/releases/download/v1.111.0/kots_linux_arm64.tar.gz
+    linux_arm64: sha256:84fc2c21bf9e1fac7d678dcae485edf23f8f2358d6da1b7dfcc83e495174ee2d
+  # https://github.com/replicatedhq/kots/releases/download/v1.112.0/kots_1.112.0_checksums.txt
+  '1.112.0':
+    # https://github.com/replicatedhq/kots/releases/download/v1.112.0/kots_darwin_all.tar.gz
+    darwin_all: sha256:869676d8d954be736982a73b83b0dffb3105d4593944c127ac73f4a3373c4029
+    # https://github.com/replicatedhq/kots/releases/download/v1.112.0/kots_linux_amd64.tar.gz
+    linux_amd64: sha256:45fccea218bd5447e6508a88b8760968525928f7f642b65553c9eed2c938bbf8
+    # https://github.com/replicatedhq/kots/releases/download/v1.112.0/kots_linux_arm64.tar.gz
+    linux_arm64: sha256:a714a298f7bfdfa26bdcfe6feec14919ca670badde7b68db680e060c0496c5de
+  # https://github.com/replicatedhq/kots/releases/download/v1.112.1/kots_1.112.1_checksums.txt
+  '1.112.1':
+    # https://github.com/replicatedhq/kots/releases/download/v1.112.1/kots_darwin_all.tar.gz
+    darwin_all: sha256:af0ca22504d13d5ed262c5c3b7bd9239125fff72f4172675daa18a6746299c10
+    # https://github.com/replicatedhq/kots/releases/download/v1.112.1/kots_linux_amd64.tar.gz
+    linux_amd64: sha256:8d340710af0626bc181c179a32f2e931d25b276f6592471e966fb90a28358282
+    # https://github.com/replicatedhq/kots/releases/download/v1.112.1/kots_linux_arm64.tar.gz
+    linux_arm64: sha256:fc9270fd69ac2375abaddc4e12a6d65a336ea020fa3d138477587434f05aaea9
+  # https://github.com/replicatedhq/kots/releases/download/v1.112.2/kots_1.112.2_checksums.txt
+  '1.112.2':
+    # https://github.com/replicatedhq/kots/releases/download/v1.112.2/kots_darwin_all.tar.gz
+    darwin_all: sha256:ebc1702c92577592373dc39b2da7dce692dd390f40f5d0ee38b1cff189f45197
+    # https://github.com/replicatedhq/kots/releases/download/v1.112.2/kots_linux_amd64.tar.gz
+    linux_amd64: sha256:2ee91b3dd779ca3fea63072cf1799c1b4b765b907872edff3e032e55eec1622f
+    # https://github.com/replicatedhq/kots/releases/download/v1.112.2/kots_linux_arm64.tar.gz
+    linux_arm64: sha256:a1d4d95536a47d6eb98453360e7086bd36e2e8a8a7fc1acae9c88fdff665f896
+  # https://github.com/replicatedhq/kots/releases/download/v1.112.3/kots_1.112.3_checksums.txt
+  '1.112.3':
+    # https://github.com/replicatedhq/kots/releases/download/v1.112.3/kots_darwin_all.tar.gz
+    darwin_all: sha256:48e3f119cdc1fa8479b5b3113c1745f5e92b176151a5edf6e38f9fd0d2f71425
+    # https://github.com/replicatedhq/kots/releases/download/v1.112.3/kots_linux_amd64.tar.gz
+    linux_amd64: sha256:3bd8184ff6dab0a9aa64b1f7b27c4eb05cd08199b4250f8d43e933f11acff64a
+    # https://github.com/replicatedhq/kots/releases/download/v1.112.3/kots_linux_arm64.tar.gz
+    linux_arm64: sha256:c429ce534b5281db5992e9efc11036b1c3ddc4d5a6e763b75221b6e829ca3ecf
+  # https://github.com/replicatedhq/kots/releases/download/v1.112.4/kots_1.112.4_checksums.txt
+  '1.112.4':
+    # https://github.com/replicatedhq/kots/releases/download/v1.112.4/kots_darwin_all.tar.gz
+    darwin_all: sha256:6f02d8f2a5d2c1616390a827d5981ad7d97e171bce3532533e502ce533505f97
+    # https://github.com/replicatedhq/kots/releases/download/v1.112.4/kots_linux_amd64.tar.gz
+    linux_amd64: sha256:f2379a2533084b7116a17a5dd84d5c8ba140d351f9124a32c737f07785317109
+    # https://github.com/replicatedhq/kots/releases/download/v1.112.4/kots_linux_arm64.tar.gz
+    linux_arm64: sha256:d3da6a2b4d8aca8a745fc42f2d57ce48fd9f1db931be1fe5378700d4613bf6f2
+  # https://github.com/replicatedhq/kots/releases/download/v1.113.0/kots_1.113.0_checksums.txt
+  '1.113.0':
+    # https://github.com/replicatedhq/kots/releases/download/v1.113.0/kots_darwin_all.tar.gz
+    darwin_all: sha256:b5154cff86b3f32b7f0efe612bbfdae93592d2875cef84821355013df9cabfe4
+    # https://github.com/replicatedhq/kots/releases/download/v1.113.0/kots_linux_amd64.tar.gz
+    linux_amd64: sha256:b82edc749f72485c3b55d5c72f4a0b2cbbfec630c05ed6797dbd5112470ff779
+    # https://github.com/replicatedhq/kots/releases/download/v1.113.0/kots_linux_arm64.tar.gz
+    linux_arm64: sha256:3d1f0908f6e933e532ffa88bcd6df4d563ec1e803c840ffc2707594e2de78d6f
+  # https://github.com/replicatedhq/kots/releases/download/v1.114.0/kots_1.114.0_checksums.txt
+  '1.114.0':
+    # https://github.com/replicatedhq/kots/releases/download/v1.114.0/kots_darwin_all.tar.gz
+    darwin_all: sha256:217dd3d5fd4429edb26b09c88a1acafab4ce68dd83f40447ce17ca13bcabec9c
+    # https://github.com/replicatedhq/kots/releases/download/v1.114.0/kots_linux_amd64.tar.gz
+    linux_amd64: sha256:45ff4216557b53633dc7aa922735cec10943898d2aa890e07c28832e21937d77
+    # https://github.com/replicatedhq/kots/releases/download/v1.114.0/kots_linux_arm64.tar.gz
+    linux_arm64: sha256:526b346f3daf195a84e248c3ed5a789d85b45f06e6bdba86c86df53e35d3e9fe
+  # https://github.com/replicatedhq/kots/releases/download/v1.115.0/kots_1.115.0_checksums.txt
+  '1.115.0':
+    # https://github.com/replicatedhq/kots/releases/download/v1.115.0/kots_darwin_all.tar.gz
+    darwin_all: sha256:a00780d59ccc2a85ff2c802bd9595b0f789c932bd2c6b60aaaa16663f8a80625
+    # https://github.com/replicatedhq/kots/releases/download/v1.115.0/kots_linux_amd64.tar.gz
+    linux_amd64: sha256:fa471612d095b4696b9729f3e63091b2751b0eb5b37e4b46d64dad6db67e9562
+    # https://github.com/replicatedhq/kots/releases/download/v1.115.0/kots_linux_arm64.tar.gz
+    linux_arm64: sha256:f4d0443847ddcbb4d7f4606ba5158aefc81315f6eddb5783618a47d1dbe34b9c
+  # https://github.com/replicatedhq/kots/releases/download/v1.115.1/kots_1.115.1_checksums.txt
+  '1.115.1':
+    # https://github.com/replicatedhq/kots/releases/download/v1.115.1/kots_darwin_all.tar.gz
+    darwin_all: sha256:97434d7c14ab709861ebb9f3c744d0046da55922fd0cbefa04bf7be9d21caf33
+    # https://github.com/replicatedhq/kots/releases/download/v1.115.1/kots_linux_amd64.tar.gz
+    linux_amd64: sha256:1f4e9503ba2bf783bad6fe6e0c0209e345bfdc1979ac2c3aac5b884c290d3af4
+    # https://github.com/replicatedhq/kots/releases/download/v1.115.1/kots_linux_arm64.tar.gz
+    linux_arm64: sha256:0010ff0e77720b0c8d597d803aaf31c5f889d6e6ed0c03d66ecd4339131f43fb
+  # https://github.com/replicatedhq/kots/releases/download/v1.115.2/kots_1.115.2_checksums.txt
+  '1.115.2':
+    # https://github.com/replicatedhq/kots/releases/download/v1.115.2/kots_darwin_all.tar.gz
+    darwin_all: sha256:bcef317d37f08ac43e5350ef8ef7aa4bbf79160bcba29835d045e52960162477
+    # https://github.com/replicatedhq/kots/releases/download/v1.115.2/kots_linux_amd64.tar.gz
+    linux_amd64: sha256:bb88897e89303e5fd7a9d61de99840aaec5250731323060c6ca0862e2eba8b23
+    # https://github.com/replicatedhq/kots/releases/download/v1.115.2/kots_linux_arm64.tar.gz
+    linux_arm64: sha256:965972d5da029c4da411fe2578490b291de2a825aab0d520219b3a06eb689fe1
+  # https://github.com/replicatedhq/kots/releases/download/v1.116.0/kots_1.116.0_checksums.txt
+  '1.116.0':
+    # https://github.com/replicatedhq/kots/releases/download/v1.116.0/kots_darwin_all.tar.gz
+    darwin_all: sha256:c9e253945349c1781e9d26690d15015cd316bc5810bdb0e576f25d0721ee3a58
+    # https://github.com/replicatedhq/kots/releases/download/v1.116.0/kots_linux_amd64.tar.gz
+    linux_amd64: sha256:e4ec82e3d5ba413a8cda16ffcc00b2e369761895de26865df5ba7d606b240aee
+    # https://github.com/replicatedhq/kots/releases/download/v1.116.0/kots_linux_arm64.tar.gz
+    linux_arm64: sha256:cde5d770a785a75064c55ebf521218acbbc2ef2cc385ee716497dd4e640a83a0
+  # https://github.com/replicatedhq/kots/releases/download/v1.116.1/kots_1.116.1_checksums.txt
+  '1.116.1':
+    # https://github.com/replicatedhq/kots/releases/download/v1.116.1/kots_darwin_all.tar.gz
+    darwin_all: sha256:f06d9dc266a4bd01dfc97b55fbdadd3ab9f828541db28f96fa2f24fb30c6475c
+    # https://github.com/replicatedhq/kots/releases/download/v1.116.1/kots_linux_amd64.tar.gz
+    linux_amd64: sha256:d48d13414313a36aa7e5b8111576a43d47c2c90cb9ee1b76bceedc13a9fb4354
+    # https://github.com/replicatedhq/kots/releases/download/v1.116.1/kots_linux_arm64.tar.gz
+    linux_arm64: sha256:8a999892a0126e3b3c49388ad91cef485df3229f33554c9fb2c6f847a2416c96
+  # https://github.com/replicatedhq/kots/releases/download/v1.117.0/kots_1.117.0_checksums.txt
+  '1.117.0':
+    # https://github.com/replicatedhq/kots/releases/download/v1.117.0/kots_darwin_all.tar.gz
+    darwin_all: sha256:8da37fb0c775dc36b6b7d35cb943a0b124233db6ccd60b6756f9e3ec8f35e794
+    # https://github.com/replicatedhq/kots/releases/download/v1.117.0/kots_linux_amd64.tar.gz
+    linux_amd64: sha256:f99eded77c5eb6c681cf248f518dfa91ddde2b763802a77a314ddc70d4f24d62
+    # https://github.com/replicatedhq/kots/releases/download/v1.117.0/kots_linux_arm64.tar.gz
+    linux_arm64: sha256:8393b20625d022fce3d6d323b7a5ef3e378d4b224bd70eb3fbb500ac332a475b
+  # https://github.com/replicatedhq/kots/releases/download/v1.117.1/kots_1.117.1_checksums.txt
+  '1.117.1':
+    # https://github.com/replicatedhq/kots/releases/download/v1.117.1/kots_darwin_all.tar.gz
+    darwin_all: sha256:0a85570da25945280eb33efdef2a39e4ce3d7aa1a4d09b77ee407f791e2791fa
+    # https://github.com/replicatedhq/kots/releases/download/v1.117.1/kots_linux_amd64.tar.gz
+    linux_amd64: sha256:9bfdc5e7d0ee52fd3eb95d0326e458a2d12ee59d9d47858fb76f644125d0f880
+    # https://github.com/replicatedhq/kots/releases/download/v1.117.1/kots_linux_arm64.tar.gz
+    linux_arm64: sha256:e390776fd48d1ef011c45d6345b215191cf9a33ad9c8e39c02ba4a35f8a56518
+  # https://github.com/replicatedhq/kots/releases/download/v1.117.2/kots_1.117.2_checksums.txt
+  '1.117.2':
+    # https://github.com/replicatedhq/kots/releases/download/v1.117.2/kots_darwin_all.tar.gz
+    darwin_all: sha256:7de266de33cf7a944c9ac1824eccfea139fd1fd5d75626ef9c196676d7af3bed
+    # https://github.com/replicatedhq/kots/releases/download/v1.117.2/kots_linux_amd64.tar.gz
+    linux_amd64: sha256:edd64369409538c9aa4ddc41b6a191562d25b66c04e7960898f6796475845f6b
+    # https://github.com/replicatedhq/kots/releases/download/v1.117.2/kots_linux_arm64.tar.gz
+    linux_arm64: sha256:b558001b0d631acf8a634ed4ddbfc4c8be95246ff954422ff765cd9707135412
+  # https://github.com/replicatedhq/kots/releases/download/v1.117.3/kots_1.117.3_checksums.txt
+  '1.117.3':
+    # https://github.com/replicatedhq/kots/releases/download/v1.117.3/kots_darwin_all.tar.gz
+    darwin_all: sha256:4f0d46bb3a9e9ca674e44f3818f6fbdf93ca00737bb3e88d7975a7713762e39a
+    # https://github.com/replicatedhq/kots/releases/download/v1.117.3/kots_linux_amd64.tar.gz
+    linux_amd64: sha256:89b4aef14f991e2d6f74052c30ff1e9642fe424939c1a9cc317d26a597d12a3e
+    # https://github.com/replicatedhq/kots/releases/download/v1.117.3/kots_linux_arm64.tar.gz
+    linux_arm64: sha256:44227982df378e4726f6c53aa06ebc0d3a83e8bfc4db77bf403536921b6af630
+  # https://github.com/replicatedhq/kots/releases/download/v1.117.4/kots_1.117.4_checksums.txt
+  '1.117.4':
+    # https://github.com/replicatedhq/kots/releases/download/v1.117.4/kots_darwin_all.tar.gz
+    darwin_all: sha256:294a4fa7885823b18f784bc97bde8c3d408226bbd3e2e7bfba98e2a6ff537f6b
+    # https://github.com/replicatedhq/kots/releases/download/v1.117.4/kots_linux_amd64.tar.gz
+    linux_amd64: sha256:cd253a37c2e548beaf8ccc50417a79a08234f88469d6f8c0cf798f77621c539a
+    # https://github.com/replicatedhq/kots/releases/download/v1.117.4/kots_linux_arm64.tar.gz
+    linux_arm64: sha256:7787a8347aa7215076bd8ad145e408767a19c6d31fccecb9899e01ca93853c71
+  # https://github.com/replicatedhq/kots/releases/download/v1.117.5/kots_1.117.5_checksums.txt
+  '1.117.5':
+    # https://github.com/replicatedhq/kots/releases/download/v1.117.5/kots_darwin_all.tar.gz
+    darwin_all: sha256:2dc71e6cb13b6fabed4824be1c139be8496b927179f261b53f6f9bdad3c5fca3
+    # https://github.com/replicatedhq/kots/releases/download/v1.117.5/kots_linux_amd64.tar.gz
+    linux_amd64: sha256:b3be3a52aef78ea341d862cc0fab8897e21fe9b3a34c69a3c79f9f79dd3aa913
+    # https://github.com/replicatedhq/kots/releases/download/v1.117.5/kots_linux_arm64.tar.gz
+    linux_arm64: sha256:e2f817c099768338cb61075e20e452d49dc89be268c83daf124742353b5db867
+  # https://github.com/replicatedhq/kots/releases/download/v1.118.0/kots_1.118.0_checksums.txt
+  '1.118.0':
+    # https://github.com/replicatedhq/kots/releases/download/v1.118.0/kots_darwin_all.tar.gz
+    darwin_all: sha256:c5817745d67b602652a64d82a8786344b1999722ce50a5674a749538cd0c779f
+    # https://github.com/replicatedhq/kots/releases/download/v1.118.0/kots_linux_amd64.tar.gz
+    linux_amd64: sha256:9070273776cbc39c230ec0b0a164e6f0f4757988d8adc84741495fe122b2b151
+    # https://github.com/replicatedhq/kots/releases/download/v1.118.0/kots_linux_arm64.tar.gz
+    linux_arm64: sha256:5fa85992d6df65178df9c9ae20d301928fe244d676022d832ba4576bc54a2cba
+  # https://github.com/replicatedhq/kots/releases/download/v1.119.0/kots_1.119.0_checksums.txt
+  '1.119.0':
+    # https://github.com/replicatedhq/kots/releases/download/v1.119.0/kots_darwin_all.tar.gz
+    darwin_all: sha256:267b066c1555856a4ab70f24f3df73bc490643e80f242fcee659f99f648ed228
+    # https://github.com/replicatedhq/kots/releases/download/v1.119.0/kots_linux_amd64.tar.gz
+    linux_amd64: sha256:7c1a19324df0eeed5b3b306ffd3ecb4d1090aa5d99e8f472ca4f045654df4c4a
+    # https://github.com/replicatedhq/kots/releases/download/v1.119.0/kots_linux_arm64.tar.gz
+    linux_arm64: sha256:c151c2f93d6ae1a6cfa254c41c514b3b53854d3145f6ebfddc8da75fd1df7945
+  # https://github.com/replicatedhq/kots/releases/download/v1.119.1/kots_1.119.1_checksums.txt
+  '1.119.1':
+    # https://github.com/replicatedhq/kots/releases/download/v1.119.1/kots_darwin_all.tar.gz
+    darwin_all: sha256:51dedced5a76626c946fb41051ff4eb2d6f4905cd1760642245ff1384b2f4899
+    # https://github.com/replicatedhq/kots/releases/download/v1.119.1/kots_linux_amd64.tar.gz
+    linux_amd64: sha256:034e1392f75380d18b7be5c5f31de0ceccefaafc7350249dd370a0a6277bd193
+    # https://github.com/replicatedhq/kots/releases/download/v1.119.1/kots_linux_arm64.tar.gz
+    linux_arm64: sha256:afa3fbc1f721be9df6eae4cdff2cb4c498c6cedfbbafabce82eccd72862af800
+  # https://github.com/replicatedhq/kots/releases/download/v1.120.0/kots_1.120.0_checksums.txt
+  '1.120.0':
+    # https://github.com/replicatedhq/kots/releases/download/v1.120.0/kots_darwin_all.tar.gz
+    darwin_all: sha256:cb4efebdb975a389330fc705b2c0ad7f144e1250cb2ac70aa72581edaab740dc
+    # https://github.com/replicatedhq/kots/releases/download/v1.120.0/kots_linux_amd64.tar.gz
+    linux_amd64: sha256:3082c7a13c55bdd8ef5388060eaacb7b8e114be5281ee06e1855948fa5b3dc83
+    # https://github.com/replicatedhq/kots/releases/download/v1.120.0/kots_linux_arm64.tar.gz
+    linux_arm64: sha256:4a298c57fadc5984f54e4a6013ae1bdfc973731297008c40a99ae74c48a126b5
+  # https://github.com/replicatedhq/kots/releases/download/v1.120.1/kots_1.120.1_checksums.txt
+  '1.120.1':
+    # https://github.com/replicatedhq/kots/releases/download/v1.120.1/kots_darwin_all.tar.gz
+    darwin_all: sha256:fb678c2e7eb97825ef47c514921b9ef076281cb5297ba80cffe99afc5be9b29e
+    # https://github.com/replicatedhq/kots/releases/download/v1.120.1/kots_linux_amd64.tar.gz
+    linux_amd64: sha256:05ad94d162c1f52fe86f103ecebe64bb4a8faa1d05b764fb3847f7aec4e6ced4
+    # https://github.com/replicatedhq/kots/releases/download/v1.120.1/kots_linux_arm64.tar.gz
+    linux_arm64: sha256:d63ec1a883631ae700717c56ee4a3be8d56a76502c44b05ecbeda068891c2cc0
+  # https://github.com/replicatedhq/kots/releases/download/v1.120.2/kots_1.120.2_checksums.txt
+  '1.120.2':
+    # https://github.com/replicatedhq/kots/releases/download/v1.120.2/kots_darwin_all.tar.gz
+    darwin_all: sha256:5cb8cf82665c460ff893e40bb2b0cfaaabb357fcc1976c34b6668917172ed0aa
+    # https://github.com/replicatedhq/kots/releases/download/v1.120.2/kots_linux_amd64.tar.gz
+    linux_amd64: sha256:716c39b0347f10452a5f1e56beb0960c4dab892bbec6b86b1cca3f8e03782cf0
+    # https://github.com/replicatedhq/kots/releases/download/v1.120.2/kots_linux_arm64.tar.gz
+    linux_arm64: sha256:cc92731ef723284d1411c1b11178f103d67898d1c287f875600e4746be82ef12
+  # https://github.com/replicatedhq/kots/releases/download/v1.120.3/kots_1.120.3_checksums.txt
+  '1.120.3':
+    # https://github.com/replicatedhq/kots/releases/download/v1.120.3/kots_darwin_all.tar.gz
+    darwin_all: sha256:1446ff43f4fd9997837f55434c25b2cd1bb25c67921bb8b55a28c16695d903d8
+    # https://github.com/replicatedhq/kots/releases/download/v1.120.3/kots_linux_amd64.tar.gz
+    linux_amd64: sha256:d8c56d0fedbc392aae1825d893da380556458a8b129f872d37bb7b1e3abc54a6
+    # https://github.com/replicatedhq/kots/releases/download/v1.120.3/kots_linux_arm64.tar.gz
+    linux_arm64: sha256:38dbe7aab4b4b2c58bfcef3a3050bba857dd1d732b95372af9b60946f7da2a96
+  # https://github.com/replicatedhq/kots/releases/download/v1.121.0/kots_1.121.0_checksums.txt
+  '1.121.0':
+    # https://github.com/replicatedhq/kots/releases/download/v1.121.0/kots_darwin_all.tar.gz
+    darwin_all: sha256:7b39c5817e3cc470543a1fe61b8d1ddb7d0de5d6bc875f814a6b2285436f0afa
+    # https://github.com/replicatedhq/kots/releases/download/v1.121.0/kots_linux_amd64.tar.gz
+    linux_amd64: sha256:3660416fe057f4a448672b0b1833452b6f5ac3b70568e1a7a3c57d08a63cafb7
+    # https://github.com/replicatedhq/kots/releases/download/v1.121.0/kots_linux_arm64.tar.gz
+    linux_arm64: sha256:7f3bcd9f802b7853952e2613bccdcafcd421f62dc0562139cadcdcd7cdc24c6c
+  # https://github.com/replicatedhq/kots/releases/download/v1.121.1/kots_1.121.1_checksums.txt
+  '1.121.1':
+    # https://github.com/replicatedhq/kots/releases/download/v1.121.1/kots_darwin_all.tar.gz
+    darwin_all: sha256:11c191aba5c55b2a47ca4eed56aca9629134500a8ba5e48d97580a8c8b9684ae
+    # https://github.com/replicatedhq/kots/releases/download/v1.121.1/kots_linux_amd64.tar.gz
+    linux_amd64: sha256:1a441a4e30944bca973d64c67db38f81c739761803622656597f5aa8e63d925f
+    # https://github.com/replicatedhq/kots/releases/download/v1.121.1/kots_linux_arm64.tar.gz
+    linux_arm64: sha256:d8911b1bf505ffd55e7cfec1108d18dbe4f6c0a54d088f9115c4bb73af280837
+  # https://github.com/replicatedhq/kots/releases/download/v1.121.2/kots_1.121.2_checksums.txt
+  '1.121.2':
+    # https://github.com/replicatedhq/kots/releases/download/v1.121.2/kots_darwin_all.tar.gz
+    darwin_all: sha256:f250531d6fd607f33aaf93bc839a8d5fc79f2eb3fb2c6ffe4c4dec44612442bb
+    # https://github.com/replicatedhq/kots/releases/download/v1.121.2/kots_linux_amd64.tar.gz
+    linux_amd64: sha256:04dcdbbacb53acffbd4dfb2256c4e09d798ba7f36427cd02dca351da531c6000
+    # https://github.com/replicatedhq/kots/releases/download/v1.121.2/kots_linux_arm64.tar.gz
+    linux_arm64: sha256:e393b277982844cd0187bab11c0736da39a2389ec1a27a9e54962c694935121f
+  # https://github.com/replicatedhq/kots/releases/download/v1.122.0/kots_1.122.0_checksums.txt
+  '1.122.0':
+    # https://github.com/replicatedhq/kots/releases/download/v1.122.0/kots_darwin_all.tar.gz
+    darwin_all: sha256:af325c05d048ee68a02ff6aac2860b00b2526dd2b8a37fb6dea9293723d1d5bf
+    # https://github.com/replicatedhq/kots/releases/download/v1.122.0/kots_linux_amd64.tar.gz
+    linux_amd64: sha256:5c8a14ea69ebed01fc6f04b4fae61730b8e946e6af0608a387fbe15293a7a5a2
+    # https://github.com/replicatedhq/kots/releases/download/v1.122.0/kots_linux_arm64.tar.gz
+    linux_arm64: sha256:d85bb5b66de4f356d7560cf38fd22b6b3d89b6dee4393f1620f692ae74bb03df
+  # https://github.com/replicatedhq/kots/releases/download/v1.122.1/kots_1.122.1_checksums.txt
+  '1.122.1':
+    # https://github.com/replicatedhq/kots/releases/download/v1.122.1/kots_darwin_all.tar.gz
+    darwin_all: sha256:5c475615b76b9e8b0cd2aef3f6325a8b9092d8ed85d92c9e058c9d008455e1ed
+    # https://github.com/replicatedhq/kots/releases/download/v1.122.1/kots_linux_amd64.tar.gz
+    linux_amd64: sha256:96e52468f60febfa25c50b334179d20ef98d37a4571df8c1922e7fc20c23bd22
+    # https://github.com/replicatedhq/kots/releases/download/v1.122.1/kots_linux_arm64.tar.gz
+    linux_arm64: sha256:1d208dc53703d6840efae9c30942c2862c350ba8d0db5679302c95631cec37c7
+  # https://github.com/replicatedhq/kots/releases/download/v1.123.0/kots_1.123.0_checksums.txt
+  '1.123.0':
+    # https://github.com/replicatedhq/kots/releases/download/v1.123.0/kots_darwin_all.tar.gz
+    darwin_all: sha256:9b6f65be32bbfe0aec0ef80c256829286d284f77da3d65c158388fb86cb9aa7c
+    # https://github.com/replicatedhq/kots/releases/download/v1.123.0/kots_linux_amd64.tar.gz
+    linux_amd64: sha256:34db14ca66a6531dde9da9746b6bca9cbe8f7ad4b65c36a2ecfdbe8f9e21da9b
+    # https://github.com/replicatedhq/kots/releases/download/v1.123.0/kots_linux_arm64.tar.gz
+    linux_arm64: sha256:6e576539bfc4071c8bc1bb9050cefe891586c377ae899d237e91a43e75e070f8
+  # https://github.com/replicatedhq/kots/releases/download/v1.123.1/kots_1.123.1_checksums.txt
+  '1.123.1':
+    # https://github.com/replicatedhq/kots/releases/download/v1.123.1/kots_darwin_all.tar.gz
+    darwin_all: sha256:7fbc67d22ca5e5c0e1994ee8df15b5820b917c2280855fdd1d8e5801a1bb6ccb
+    # https://github.com/replicatedhq/kots/releases/download/v1.123.1/kots_linux_amd64.tar.gz
+    linux_amd64: sha256:477ab86490a69071485103960d0c7309f74850cb1bf2a81a5f802f2e545fa94e
+    # https://github.com/replicatedhq/kots/releases/download/v1.123.1/kots_linux_arm64.tar.gz
+    linux_arm64: sha256:a23fcd6cdb49547dfdeb1ee7d23b72783f728fe44eec2d0331fe252e37f3c243
+  # https://github.com/replicatedhq/kots/releases/download/v1.124.0/kots_1.124.0_checksums.txt
+  '1.124.0':
+    # https://github.com/replicatedhq/kots/releases/download/v1.124.0/kots_darwin_all.tar.gz
+    darwin_all: sha256:2053d58847279c3e781fc1232d48141241a2e5dddca1cf5a99425376f368360c
+    # https://github.com/replicatedhq/kots/releases/download/v1.124.0/kots_linux_amd64.tar.gz
+    linux_amd64: sha256:7356376f566458bab65d393902376d7799a7f464271a1dd79ce89b24712b487a
+    # https://github.com/replicatedhq/kots/releases/download/v1.124.0/kots_linux_arm64.tar.gz
+    linux_arm64: sha256:9393b253bfc9a397838499cea58f557aa8598991f3a6f589830be308d2ab11c9
+  # https://github.com/replicatedhq/kots/releases/download/v1.124.1/kots_1.124.1_checksums.txt
+  '1.124.1':
+    # https://github.com/replicatedhq/kots/releases/download/v1.124.1/kots_darwin_all.tar.gz
+    darwin_all: sha256:a2195c159cc2fb5268591d303e67f4440471e784f47cd773034f9ca14c4e35a5
+    # https://github.com/replicatedhq/kots/releases/download/v1.124.1/kots_linux_amd64.tar.gz
+    linux_amd64: sha256:628108f4550730b278c181280adeba454d8b4b8f3ef275d6aa2845b2e1a42f59
+    # https://github.com/replicatedhq/kots/releases/download/v1.124.1/kots_linux_arm64.tar.gz
+    linux_arm64: sha256:fe52187f576858b27306e0142015deeb431ebd6c93482c0b709f32e842bf4b68
+  # https://github.com/replicatedhq/kots/releases/download/v1.124.2/kots_1.124.2_checksums.txt
+  '1.124.2':
+    # https://github.com/replicatedhq/kots/releases/download/v1.124.2/kots_darwin_all.tar.gz
+    darwin_all: sha256:03ec27cc282a30fe66e757c1633b3f758d6edf4bd56c6f53196c603234734fba
+    # https://github.com/replicatedhq/kots/releases/download/v1.124.2/kots_linux_amd64.tar.gz
+    linux_amd64: sha256:97a547c4e3b74860f4d3dff1644e6104198b54ccc1afba5f244d9f3b424b73c9
+    # https://github.com/replicatedhq/kots/releases/download/v1.124.2/kots_linux_arm64.tar.gz
+    linux_arm64: sha256:12e993e7c8d65fdffccf7391817cc64a8a92eaab4e57a72876789341f3c2fe4b
+  # https://github.com/replicatedhq/kots/releases/download/v1.124.3/kots_1.124.3_checksums.txt
+  '1.124.3':
+    # https://github.com/replicatedhq/kots/releases/download/v1.124.3/kots_darwin_all.tar.gz
+    darwin_all: sha256:b5f16386b486e63716a0456db3b29097376463640ed4b41b118d454039f50e85
+    # https://github.com/replicatedhq/kots/releases/download/v1.124.3/kots_linux_amd64.tar.gz
+    linux_amd64: sha256:8678292087fc24f515831b2b07d0e528ccb53d9c0ea9f67d0d6cabf8db9bea6b
+    # https://github.com/replicatedhq/kots/releases/download/v1.124.3/kots_linux_arm64.tar.gz
+    linux_arm64: sha256:ed7f32156034c771f77d3f9abd676103ad7caac53f1bb2f9c3355cfc0f4f0a6a
+  # https://github.com/replicatedhq/kots/releases/download/v1.124.4/kots_1.124.4_checksums.txt
+  '1.124.4':
+    # https://github.com/replicatedhq/kots/releases/download/v1.124.4/kots_darwin_all.tar.gz
+    darwin_all: sha256:6e719e416f643d94003a559ac2a43800de8117656550d8cc771469ee2858ef12
+    # https://github.com/replicatedhq/kots/releases/download/v1.124.4/kots_linux_amd64.tar.gz
+    linux_amd64: sha256:aa02e154814eaf8fcc4561746a58a6845b396c7fd70518f70e5598868ad7e8e2
+    # https://github.com/replicatedhq/kots/releases/download/v1.124.4/kots_linux_arm64.tar.gz
+    linux_arm64: sha256:879f349475e01e84f8ea4830deb8092cb435a0b5b2fd3793d163bc2d916f84a4
+  # https://github.com/replicatedhq/kots/releases/download/v1.124.5/kots_1.124.5_checksums.txt
+  '1.124.5':
+    # https://github.com/replicatedhq/kots/releases/download/v1.124.5/kots_darwin_all.tar.gz
+    darwin_all: sha256:9b5856abcea9f2bcefc799a4c1dce167387dfbdf7d0c1ece51f6a408e0eecb53
+    # https://github.com/replicatedhq/kots/releases/download/v1.124.5/kots_linux_amd64.tar.gz
+    linux_amd64: sha256:38a6fe9710c7d41fa3cf975c9327076d6077dccdacd7ff20592bae5c0a18fb89
+    # https://github.com/replicatedhq/kots/releases/download/v1.124.5/kots_linux_arm64.tar.gz
+    linux_arm64: sha256:299ee1136ab4316e02a9dbbdd97d40fb8f0eadc75729af5721873f2cd17d02f8

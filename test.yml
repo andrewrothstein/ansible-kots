@@ -1,9 +1,13 @@
 ---
-- hosts: all
+- name: Testing andrewrothstein.kots
+  hosts: all
   roles:
-  - role: '{{ playbook_dir }}'
+    - role: '{{ playbook_dir }}'
   tasks:
-  - command: /usr/local/bin/kots version
-    register: kots_test_output
-  - debug:
-      msg: '{{ kots_test_output.stdout }}'
+    - name: Executing 'kots version'
+      ansible.builtin.command: kots version
+      changed_when: false
+      register: kots_test_output
+    - name: Output from 'kots version'
+      ansible.builtin.debug:
+        msg: '{{ kots_test_output.stdout }}'
